@@ -14,6 +14,9 @@
     --verde-s: #565902;
     --verde-m: #888C03;
 }
+body{
+    background-color: var(--verde-m);
+}
 header{
     display: flex;
     justify-content: space-evenly;
@@ -36,8 +39,21 @@ header{
     font-size: 1.5rem;
 }
 main{
-    height: 100vh;
+    height: 90vh;
+    width: 80%;
+    margin: auto;
     background-color: var(--preto);
+}
+.var{
+    text-align: center;
+    padding: 2rem;
+    color: var(--amarelo);
+}
+.var button{
+    padding: 5px;
+}
+.para {
+    padding: 10px;
 }
 .footer{
     background-color: var(--verde-s);
