@@ -17,8 +17,9 @@ function limpa(){
     document.getElementById("saida2").innerHTML =limpa;
 }
 function muda(){
+    setTimeout(() =>{
     for(i=0;i<3;i++){
         let paragrafos = document.getElementsByClassName("para");
         paragrafos[i].style.color='var(--verde-s)';
-    }   
+    }},1000);
 }
