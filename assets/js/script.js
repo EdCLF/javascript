@@ -16,10 +16,17 @@ function limpa(){
     let limpa = " ";
     document.getElementById("saida2").innerHTML =limpa;
 }
+let i=0
 function muda(){
-    setTimeout(() =>{
-    for(i=0;i<3;i++){
         let paragrafos = document.getElementsByClassName("para");
         paragrafos[i].style.color='var(--verde-s)';
-    }},1000);
+        i++
+}
+
+function reset(){
+    for(j=0;j<=2;j++){
+        let paragrafos = document.getElementsByClassName("para");
+            paragrafos[j].style.color='var(--amarelo)';
+            i=0
+    }
 }
