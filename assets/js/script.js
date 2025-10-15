@@ -16,6 +16,10 @@ function limpa(){
     let limpa = " ";
     document.getElementById("saida2").innerHTML =limpa;
 }
+function limpavar(){
+    let limpa = " ";
+    document.getElementById("saida").innerHTML =limpa;
+}
 let i=0
 function muda(){
         let paragrafos = document.getElementsByClassName("para");
