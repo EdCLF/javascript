@@ -96,4 +96,26 @@ window.onload = () => {
     mostrarSlides();
     iniciarSlidesshowAutomatico();
 }
-// --------------------fim do carrossel-----------------------
+// --------------------Tema Claro e escuro---------------------
+const mudaTema = document.getElementById('trocaTema');
+mudaTema.addEventListener('click', () =>{
+    document.body.classList.toggle('dMod');
+    //verificação da escolha do usuario
+    if(document.body.classList.contains('dMod')){
+        localStorage.setItem('tema','escuro');
+    }
+    else{
+        localStorage.setItem('tema','claro');
+    }
+});
+
+// quando a pagina for carregada, permaneça a cor esperada
+window.addEventListener('DOMContentLoaded', ()=>{
+    const temaSalvo = localStorage.getItem('tema');
+    if(temaSalvo === 'escuro'){
+        document.body.classList.add('dMod');
+    }
+    else{
+        document.body.classList.remove('dMod');
+    }
+});

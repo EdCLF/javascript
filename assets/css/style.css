@@ -125,4 +125,8 @@ main{
     from {opacity: 0.4}
     to {opacity: 1}
 }
-/* ------------------fim carrossel--------------------- */
+/* ------------------Fim carrossel-------------------- */
+body.dMod{
+    background-color: var(--amarelo);
+    color: var(--preto);
+}
