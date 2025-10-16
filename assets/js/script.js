@@ -12,21 +12,23 @@ function test_let(){
     let frase ="Olá, sou uma variavel LET";
     document.getElementById("saida2").innerHTML = frase;
 }
+// limpa e limpaVar deixa a div saida com uma string limpa
 function limpa(){
     let limpa = " ";
     document.getElementById("saida2").innerHTML =limpa;
 }
-function limpavar(){
+function limpaVar(){
     let limpa = " ";
     document.getElementById("saida").innerHTML =limpa;
 }
+// let fora da função para poder guardar o valor de i
 let i=0
 function muda(){
         let paragrafos = document.getElementsByClassName("para");
         paragrafos[i].style.color='var(--verde-s)';
         i++
 }
-
+// function reset tem i=0 para que a function muda continue funcionando
 function reset(){
     for(j=0;j<=2;j++){
         let paragrafos = document.getElementsByClassName("para");
@@ -34,6 +36,8 @@ function reset(){
             i= 0
     }
 }
+
+// ----------------------Carrossel-----------------------------
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
 const prev = document.querySelector(".prev");
@@ -64,7 +68,7 @@ function slideAnterior(){
     }
     mostrarSlides();
 }
-
+// para que o slide passe automaticamente
 function slideAutomatico(){
     tempinho = setInterval(proximoSlide,2000);
 }
@@ -87,8 +91,9 @@ next.addEventListener("click", () =>{
     proximoSlide();
     resetaIntervalo();
 });
-
+// inicia o carrossel no carregar da pagina
 window.onload = () => {
     mostrarSlides();
     iniciarSlidesshowAutomatico();
 }
+// --------------------fim do carrossel-----------------------

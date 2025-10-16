@@ -60,7 +60,12 @@ main{
     font-size: 1rem;
     background-color: var(--verde-s);
     color: var(--amarelo);
+    box-shadow: 0 0 0.5rem 0.1rem var(--verde-s);
+}
+.var button:hover{
     box-shadow: 0 0 0.5rem 0.1rem var(--amarelo);
+    cursor: pointer;
+    transform: scale(1.2);
 }
 .para {
     padding: 10px;
@@ -73,6 +78,7 @@ main{
     padding: 16px;
     position: sticky;
 }
+/* -----------------carrossel------------------ */
 .slideshow-container {
     position: relative;
     width: 600px;
@@ -117,3 +123,4 @@ main{
     from {opacity: 0.4}
     to {opacity: 1}
 }
+/* ------------------fim carrossel--------------------- */
